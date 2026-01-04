@@ -162,3 +162,25 @@ canvas {
     opacity: 0;
   }
 }
+/* 🎀 Ribbon on calendar day boxes */
+.day {
+  position: relative;
+}
+
+.day::before {
+  content: "🎀";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ✨ Frosted glass calendar container */
+.calendar {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border-radius: 22px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
