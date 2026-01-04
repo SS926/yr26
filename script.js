@@ -2,7 +2,7 @@ const PASSWORD = "1234";
 
 /* ================= CONTENT ================= */
 const content = [
-  { image: "day1.jpg", text: "bday countdown🐭" },
+  { image: "day1.jpg", text: "bday countdownnnn🐭" },
   { image: "day2.jpg", text: "hehe cutaaaa🫶🏻" },
 
   /* ☕ DAY 3 — COFFEE WORD PUZZLE */
