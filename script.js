@@ -62,6 +62,8 @@ function unlock() {
 }
 
 /* BUILD CALENDAR */
+const today = new Date().getDate(); // change if needed
+
 function buildCalendar() {
   const cal = document.getElementById("calendar");
   cal.innerHTML = "";
@@ -71,9 +73,10 @@ function buildCalendar() {
     d.className = "day";
     d.innerText = i;
 
-    if (isLocked(i)) {
-      d.classList.add("locked");
+    if (i > today) {
+      d.style.opacity = "0.4";
       d.innerText = "🔒";
+      d.onclick = null;
     } else {
       d.onclick = () => openModal(i);
     }
