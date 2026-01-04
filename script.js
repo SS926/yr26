@@ -221,7 +221,39 @@ function blowCandle() {
   }, 30);
   setTimeout(() => clearInterval(t), 3000);
 }
+function heartsBurst() {
+  const canvas = document.getElementById("heartsCanvas");
+  const ctx = canvas.getContext("2d");
 
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const hearts = Array.from({ length: 25 }, () => ({
+    x: Math.random() * canvas.width,
+    y: canvas.height + Math.random() * 100,
+    size: Math.random() * 14 + 10,
+    speed: Math.random() * 1.5 + 0.5,
+    alpha: 1
+  }));
+
+  let animation = setInterval(() => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    hearts.forEach(h => {
+      ctx.font = `${h.size}px serif`;
+      ctx.globalAlpha = h.alpha;
+      ctx.fillText("❤️", h.x, h.y);
+      h.y -= h.speed;
+      h.alpha -= 0.01;
+    });
+
+  }, 30);
+
+  setTimeout(() => {
+    clearInterval(animation);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }, 2000);
+}
 /* ================= CLOSE ================= */
 function closeModal() {
   document.getElementById("modal").style.display = "none";
