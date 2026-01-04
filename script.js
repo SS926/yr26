@@ -22,7 +22,10 @@ function buildCalendar() {
     const d = document.createElement("div");
     d.className = "day";
     d.innerText = i;
+
+    // ALL DAYS CLICKABLE
     d.onclick = () => openModal(i);
+
     cal.appendChild(d);
   }
 }
