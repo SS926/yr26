@@ -166,6 +166,7 @@ function openModal(day) {
     <p>${item.text}</p>
     ${linkHTML}
   `;
+  setTimeout(heartsBurst, 300);
 }
 
 /* ================= CHECKS ================= */
