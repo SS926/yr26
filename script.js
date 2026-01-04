@@ -55,9 +55,7 @@ const content = [
 
 /* UNLOCK */
 function unlock() {
-  const input = document.getElementById("password").value;
-  if (input !== PASSWORD) return;
-
+  console.log("Unlock clicked");
   document.getElementById("login").style.display = "none";
   document.getElementById("calendar").style.display = "grid";
   buildCalendar();
