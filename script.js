@@ -128,7 +128,7 @@ function openModal(day) {
   /* 📅 DAY 6 */
   if (item.type === "datePuzzle") {
     modalText.innerHTML = `
-      <h3>📅 Date Scramble</h3>
+      <h3>When was our farewell?</h3>
       <h2>${item.scrambled}</h2>
       <input id="dateInput" placeholder="DD/MM/YY">
       <br><br>
@@ -175,7 +175,7 @@ function checkWord() {
   if (v === puzzleAnswer) {
     r.innerHTML = `${puzzleSuccess}<br><img src="${puzzleImage}">`;
     spawnHearts(8);
-  } else r.innerText = "❌ Try again";
+  } else r.innerText = "BYE";
 }
 
 function checkDatePuzzle() {
@@ -184,7 +184,7 @@ function checkDatePuzzle() {
   if (v === dateAnswer) {
     r.innerHTML = `${dateSuccess}<br><img src="${dateImage}">`;
     spawnHearts(10);
-  } else r.innerText = "❌ Try again";
+  } else r.innerText = "blablabla";
 }
 
 function checkRiddle() {
@@ -193,7 +193,7 @@ function checkRiddle() {
   if (v === riddleAnswer) {
     r.innerHTML = `${riddleSuccess}<br><img src="${riddleImage}">`;
     spawnHearts(10);
-  } else r.innerText = "❌ Try again";
+  } else r.innerText = "YOU DONT LOVE ME ANYMORE!!!";
 }
 
 /* ================= EFFECTS ================= */
