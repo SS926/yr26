@@ -3,14 +3,14 @@ const PASSWORD = "1234";
 /* ================= CONTENT ================= */
 const content = [
   { image: "day1.jpg", text: "bday countdown🐭" },
-  { image: "day2.jpg", text: "something that still makes me smile🫠" },
+  { image: "day2.jpg", text: "hehe cutaaaa🫶🏻" },
 
   /* ☕ DAY 3 — COFFEE WORD PUZZLE */
   {
     type: "wordPuzzle",
     scrambled: "F E E O F C",
     answer: "coffee",
-    successText: "Only thing i love more than you🧋",
+    successText: "only thing i love more than you⏳",
     image: "day3.jpg"
   },
 
@@ -20,24 +20,24 @@ const content = [
   /* 📅 DAY 6 — DATE SCRAMBLE */
   {
     type: "datePuzzle",
-    scrambled: "20308022",
-    answer: "08/02/2023",
-    successText: "then vs now⏳",
+    scrambled: "2 0 / 1 4 / 0 2",
+    answer: "20/14/02",
+    successText: "then vs now ⏳",
     image: "day6.jpg"
   },
 
-  { image: "day7.jpg", text: "i love you💘" },
-  { image: "day8.jpg", text: "we should do this often🫶🏻" },
+  { image: "day7.jpg", text: "i love you🦫" },
+  { image: "day8.jpg", text: "we should do this more often🫶🏻" },
 
   {
     image: "day9.jpg",
     text: "🎵 This song reminds me of us",
-    link: "https://music.apple.com/in/album/my-love-mine-all-mine/1697335341?i=1697335814"
+    link: "https://music.apple.com/"
   },
 
   { image: "day10.jpg", text: "i miss this more than you🤓" },
-  { image: "day11.jpg", text: "something you NEED to do 💪" },
-  { image: "day12.jpg", text: "our 1st trip🦫" },
+  { image: "day11.jpg", text: "you NEED to do this 💪" },
+  { image: "day12.jpg", text: "our 1st trip" },
 
   /* 🧩 DAY 13 — RIDDLE */
   {
@@ -54,7 +54,7 @@ const content = [
   /* 🎂 DAY 16 */
   {
     type: "birthday",
-    text: "🎂 HAPPY BIRTHDAYYYYY 🎂\nBlow the candle & make a wish(ME🦦)",
+    text: "🎂 HAPPY BIRTHDAYYYY 🎂\nBlow the candle & make a wish(ME🦦)",
     image: "day16.jpg"
   }
 ];
