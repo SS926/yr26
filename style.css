@@ -98,3 +98,23 @@ canvas {
   inset: 0;
   pointer-events: none;
 }
+/* ❤️ FLOATING HEARTS */
+.heart {
+  position: fixed;
+  bottom: 30px;
+  font-size: 22px;
+  animation: floatHeart 2.5s ease forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120px) scale(1.6);
+    opacity: 0;
+  }
+}
