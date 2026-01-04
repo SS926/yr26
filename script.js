@@ -2,59 +2,60 @@ const PASSWORD = "1234";
 
 /* ================= CONTENT ================= */
 const content = [
-  { image: "day1.jpg", text: "Day 1 💕" },
-  { image: "day2.jpg", text: "Day 2 ✨" },
+  { image: "day1.jpg", text: "bday countdown🐭" },
+  { image: "day2.jpg", text: "something that still makes me smile🫠" },
 
   /* ☕ DAY 3 — COFFEE WORD PUZZLE */
   {
     type: "wordPuzzle",
     scrambled: "F E E O F C",
     answer: "coffee",
-    successText: "☕ Coffee dates forever 💖",
+    successText: "Only thing i love more than you🧋",
     image: "day3.jpg"
   },
 
-  { image: "day4.jpg", text: "Day 4 🌸" },
-  { image: "day5.jpg", text: "Day 5 🌼" },
+  { image: "day4.jpg", text: "your 1st 'effort'😂" },
+  { image: "day5.jpg", text: "yk you're good at it🎁" },
 
   /* 📅 DAY 6 — DATE SCRAMBLE */
   {
     type: "datePuzzle",
-    scrambled: "2 0 / 1 4 / 0 2",
-    answer: "20/14/02",
-    successText: "📅 Some dates change everything 💖",
+    text:"when was our farewell?"
+    scrambled: "20308022",
+    answer: "08/02/2023",
+    successText: "then vs now⏳",
     image: "day6.jpg"
   },
 
-  { image: "day7.jpg", text: "Day 7 ☁️" },
-  { image: "day8.jpg", text: "Day 8 🤍" },
+  { image: "day7.jpg", text: "i love you💘" },
+  { image: "day8.jpg", text: "we should do this often🫶🏻" },
 
   {
     image: "day9.jpg",
     text: "🎵 This song reminds me of us",
-    link: "https://music.apple.com/"
+    link: "https://music.apple.com/in/album/my-love-mine-all-mine/1697335341?i=1697335814"
   },
 
-  { image: "day10.jpg", text: "Day 10 🌙" },
-  { image: "day11.jpg", text: "Day 11 💪" },
-  { image: "day12.jpg", text: "Day 12 ✨" },
+  { image: "day10.jpg", text: "i miss this more than you🤓" },
+  { image: "day11.jpg", text: "something you NEED to do 💪" },
+  { image: "day12.jpg", text: "our 1st trip🦫" },
 
   /* 🧩 DAY 13 — RIDDLE */
   {
     type: "riddle",
     question: "I’m not a place, but I feel like home.",
     answer: "you",
-    successText: "💗 Always you.",
+    successText: "hehehe🧁",
     image: "day13.jpg"
   },
 
-  { image: "day14.jpg", text: "Day 14 🍓" },
-  { image: "day15.jpg", text: "Day 15 🧸" },
+  { image: "day14.jpg", text: "almost there 🍓" },
+  { image: "day15.jpg", text: "budday budday 🧸" },
 
   /* 🎂 DAY 16 */
   {
     type: "birthday",
-    text: "🎂 HAPPY BIRTHDAY ❤️\nBlow the candle!",
+    text: "🎂 HAPPY BIRTHDAYYYYY 🎂\nBlow the candle & make a wish(ME🦦)",
     image: "day16.jpg"
   }
 ];
