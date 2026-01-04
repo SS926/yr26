@@ -20,7 +20,6 @@ const content = [
   /* 📅 DAY 6 — DATE SCRAMBLE */
   {
     type: "datePuzzle",
-    text:"when was our farewell?"
     scrambled: "20308022",
     answer: "08/02/2023",
     successText: "then vs now⏳",
