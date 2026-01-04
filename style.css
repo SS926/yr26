@@ -98,3 +98,10 @@ canvas {
   inset: 0;
   pointer-events: none;
 }
+#heartsCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
