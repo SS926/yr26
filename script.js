@@ -32,13 +32,13 @@ const content = [
 
   {
     image: "day9.jpg",
-    text: "🎵 This song reminds me of us",
+    text: "🎶 This song reminds me of us",
     link: "https://music.apple.com/in/album/my-love-mine-all-mine/1697335341?i=1697335814"
   },
 
   { image: "day10.jpg", text: "i miss this more than you🤓" },
-  { image: "day11.jpg", text: "you NEED to do this 💪" },
-  { image: "day12.jpg", text: "our 1st trip" },
+  { image: "day11.jpg", text: "you NEED to do this 💪🏽" },
+  { image: "day12.jpg", text: "our 1st trip✨" },
 
   /* 🧩 DAY 13 — RIDDLE */
   {
@@ -55,7 +55,7 @@ const content = [
   /* 🎂 DAY 16 */
   {
     type: "birthday",
-    text: "🎂 HAPPY BIRTHDAYYYY 🎂\nBlow the candle & make a wish(ME🦦)",
+    text: "🎂 HAPPY BIRTHDAYYYY 🎂\nyou're 20!? issok bbg blow the candle & make a wish(ME🦦)",
     image: "day16.jpg"
   }
 ];
