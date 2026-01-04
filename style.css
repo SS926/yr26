@@ -1,164 +1,69 @@
-:root {
-  --bg: #0e0b14;
-  --card: #b23a48;
-  --modal: #1b1325;
-  --text: #fff1f3;
-  --accent: #ff6f91;
-}
-
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
   font-family: Arial, sans-serif;
   text-align: center;
+  background: #111;
+  color: white;
 }
+
 /* LOGIN */
 #login {
-  margin-top: 120px;
+  margin-top: 30vh;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
 
 /* CALENDAR */
 .calendar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  max-width: 500px;
+  gap: 12px;
+  max-width: 400px;
   margin: 40px auto;
-  margin-top: 60px;
 }
 
-/* DAY BOX */
 .day {
-  background: var(--card);
+  background: #c62828;
   padding: 25px 0;
-  border-radius: 12px;
-  font-size: 22px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 8px 20px rgba(255, 111, 145, 0.25);
 }
 
-.day:hover {
-  transform: scale(1.05);
-}
-
-/* MODAL OVERLAY */
+/* MODAL */
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.75);
-  z-index: 1000;
+  background: rgba(0,0,0,0.7);
 }
 
-/* MODAL BOX */
 .modal-content {
-  background: var(--modal);
-  color: var(--text);
-  width: 90%;
-  max-width: 420px;
-  max-height: 80vh;
+  background: #222;
   margin: 10vh auto;
   padding: 20px;
-  border-radius: 14px;
-  overflow-y: auto;
+  max-width: 400px;
+  border-radius: 10px;
   position: relative;
-  animation: fadeIn 0.3s ease;
-  box-shadow: 0 0 30px rgba(255, 111, 145, 0.25);
 }
 
-/* CLOSE BUTTON */
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
+  top: 8px;
+  right: 12px;
   background: none;
-  border: none;
   color: white;
-  cursor: pointer;
-}
-
-/* IMAGES */
-.modal img {
-  width: 100%;
-  max-height: 45vh;
-  object-fit: contain;
-  margin-top: 15px;
-  border-radius: 10px;
-}
-
-/* INPUTS */
-input {
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  width: 80%;
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* BUTTONS */
-button {
-  background: var(--accent);
-  color: white;
-  padding: 10px 16px;
-  border-radius: 6px;
+  font-size: 22px;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
-}
-
-/* MUSIC LINK */
-.music-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-/* FADE ANIMATION */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-/* FLOATING HEARTS */
-.hearts {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.heart {
-  position: absolute;
-  bottom: -20px;
-  color: rgba(255, 111, 145, 0.35);
-  font-size: 18px;
-  animation: floatUp linear infinite;
-}
-
-@keyframes floatUp {
-  from {
-    transform: translateY(0) scale(1);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-110vh) scale(1.6);
-    opacity: 0;
-  }
 }
