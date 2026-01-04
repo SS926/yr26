@@ -105,6 +105,7 @@ function openModal(day) {
     document.getElementById("candle").onclick = () => {
       blowCandle();
       spawnHearts(20);
+      spawnBalloons(10);
     };
     return;
   }
@@ -254,6 +255,27 @@ function heartsBurst() {
     clearInterval(animation);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }, 2000);
+}
+function spawnBalloons(count = 8) {
+  const pastelColors = [
+    "#ffd1dc", // pastel pink
+    "#e6d9ff", // lavender
+    "#d1f0e8", // mint
+    "#fff1c1", // soft yellow
+    "#ffd8b1"  // peach
+  ];
+
+  for (let i = 0; i < count; i++) {
+    const b = document.createElement("div");
+    b.className = "balloon";
+    b.style.background =
+      pastelColors[Math.floor(Math.random() * pastelColors.length)];
+    b.style.left = Math.random() * window.innerWidth + "px";
+
+    document.body.appendChild(b);
+
+    setTimeout(() => b.remove(), 5000);
+  }
 }
 /* ================= CLOSE ================= */
 function closeModal() {
