@@ -96,10 +96,9 @@ function openModal(day) {
       <img src="${item.image}">
       <canvas id="confettiCanvas"></canvas>
     `;
-    document.getElementById("candle").onclick = () => {
-  blowCandle();
-  spawnHearts(20);
-};
+    document.getElementById("candle").onclick = blowcandle;
+  return;
+}
 
   // ☕ DAY 3 WORD PUZZLE
   if (item.type === "wordPuzzle") {
@@ -181,7 +180,6 @@ function checkWord() {
 
   if (val === puzzleAnswer) {
     res.innerHTML = `${puzzleSuccess}<br><img src="${puzzleImage}">`;
-    spawnHearts(8);
   } else {
     res.innerText = "❌ BYE ❌";
   }
@@ -192,7 +190,6 @@ function checkWord() {
 
   if (input === dateAnswer) {
     res.innerHTML = `${dateSuccess}<br><img src="${dateImage}">`;
-    spawnHearts(10);
   } else {
     res.innerText = "YOU DONT LOVE ME ANYMORE🔪";
   }
@@ -205,7 +202,6 @@ function checkRiddle() {
 
   if (val === riddleAnswer) {
     res.innerHTML = `${riddleSuccess}<br><img src="${riddleImage}">`;
-    spawnHearts(10);
   } else {
     res.innerText = "Blablabla";
   }
@@ -237,15 +233,4 @@ function blowCandle() {
   }, 20);
 
   setTimeout(() => clearInterval(t), 3000);
-}
-function spawnHearts(count = 6) {
-  for (let i = 0; i < count; i++) {
-    const heart = document.createElement("div");
-    heart.className = "heart";
-    heart.innerText = "💖";
-    heart.style.left = Math.random() * window.innerWidth + "px";
-    document.body.appendChild(heart);
-
-    setTimeout(() => heart.remove(), 2500);
-  }
 }
