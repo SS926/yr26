@@ -7,6 +7,7 @@
 </head>
 <body>
 
+<!-- LOGIN -->
 <div id="login">
   <h2>🎂 Birthday Calendar</h2>
   <input type="password" id="password" placeholder="Enter password">
@@ -14,8 +15,10 @@
   <button onclick="unlock()">Unlock</button>
 </div>
 
+<!-- CALENDAR -->
 <div id="calendar" class="calendar" style="display:none;"></div>
 
+<!-- MODAL -->
 <div id="modal" class="modal" onclick="closeModal()">
   <div class="modal-content" onclick="event.stopPropagation()">
     <button class="close-btn" onclick="closeModal()">×</button>
