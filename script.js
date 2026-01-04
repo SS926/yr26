@@ -20,8 +20,9 @@ const content = [
   /* 📅 DAY 6 — DATE SCRAMBLE */
   {
     type: "datePuzzle",
-    scrambled: "2 0 / 1 4 / 0 2",
-    answer: "20/14/02",
+    text: "when was our farewell?",
+    scrambled: "02302082",
+    answer: "08/02/2023",
     successText: "then vs now ⏳",
     image: "day6.jpg"
   },
@@ -32,7 +33,7 @@ const content = [
   {
     image: "day9.jpg",
     text: "🎵 This song reminds me of us",
-    link: "https://music.apple.com/"
+    link: "https://music.apple.com/in/album/my-love-mine-all-mine/1697335341?i=1697335814"
   },
 
   { image: "day10.jpg", text: "i miss this more than you🤓" },
