@@ -1,4 +1,4 @@
-const PASSWORD = "1234";
+const PASSWORD = "Bemybb@20";
 
 /* ================= CONTENT ================= */
 const content = [
