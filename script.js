@@ -61,7 +61,8 @@ const content = [
 ];
 
 /* ================= UNLOCK ================= */
-function unlock() {
+function unlock()
+{
   const input = document.getElementById("password").value;
   if (input !== PASSWORD) {
     alert("Wrong password");
