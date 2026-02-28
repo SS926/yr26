@@ -76,11 +76,31 @@ function unlock() {
 function buildCalendar() {
   const cal = document.getElementById("calendar");
   cal.innerHTML = "";
+
+  /* 🎂 SET BIRTHDAY DATE (YYYY, MONTH-1, DAY) */
+  const birthday = new Date(2026, 2, 16); 
+  // March = 2 (because months start from 0)
+
+  const today = new Date();
+
+  const startDate = new Date(birthday);
+  startDate.setDate(birthday.getDate() - 15); 
+  // 16 days including birthday
+
+  const diffTime = today - startDate;
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+
   for (let i = 1; i <= 16; i++) {
     const d = document.createElement("div");
     d.className = "day";
     d.innerText = i;
-    d.onclick = () => openModal(i);
+
+    if (i <= diffDays) {
+      d.onclick = () => openModal(i);
+    } else {
+      d.classList.add("locked");
+    }
+
     cal.appendChild(d);
   }
 }
