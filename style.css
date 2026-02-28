@@ -204,13 +204,3 @@ canvas {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-.day.locked {
-  opacity: 0.5;
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-.day.locked::after {
-  content: "🔒";
-  font-size: 18px;
-}
